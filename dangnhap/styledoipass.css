@@ -1,0 +1,188 @@
+body {
+	background: url("../images/b2.jpg");
+	/*background-image: url('http://<?php echo $_SERVER['HTTP_HOST'];?>/qlpmth/images/banner3.jpg');*/
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+	background-size: cover;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	color: #fff;
+	font-family: 'Quicksand', sans-serif;
+	text-align: center;
+}
+
+/*body a {
+	transition: 0.5s all;
+	-webkit-transition: 0.5s all;
+	-moz-transition: 0.5s all;
+	-o-transition: 0.5s all;
+	-ms-transition: 0.5s all;
+	text-decoration: none;
+}*/
+
+/*input[type="button"], input[type="submit"] {
+	transition: 0.5s all;
+	-webkit-transition: 0.5s all;
+	-moz-transition: 0.5s all;
+	-o-transition: 0.5s all;
+	-ms-transition: 0.5s all;
+}*/
+
+.btn {
+	text-decoration: none;
+font-size: 15px;
+	padding: 7px 29px;
+	background-color: #80ccff;
+	color: #000;
+	border: none;
+	border-radius: 0px;
+	outline: none;
+	float:left;
+	cursor: pointer;	
+}
+
+
+input[type="submit"] {
+
+	font-size: 15px;
+	padding: 8px 34px;
+	background-color: #80ccff;
+	color: #000;
+	border: none;
+	border-radius: 0px;
+	outline: none;
+	margin-right:  34px;
+	cursor: pointer;
+}
+
+.container {
+    width: 30%;
+    margin: 0 auto;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 30px;
+
+    position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+h1 {
+    font-size: 28px;
+    font-weight: 300;
+    margin-bottom: 30px;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+input[type="text"] {
+	width: 80%;
+	padding: 7px 4px 5px;
+	font-size: 14px;
+	background: transparent;
+	border: 2px solid #80ccff;
+	outline: none;
+	margin-bottom: 9px;
+	color: #fff;
+	font-family: 'Quicksand', sans-serif;
+}
+/*input[type="text"] {
+	background: url("../images/user.png") no-repeat 382px 11px;
+	background-size: 25px;
+}*/
+input[type="password"] {
+	background: url("../images/password.png") no-repeat 382px 11px;
+	width: 80%;
+	padding: 5px 4px 5px;
+	font-size: 14px;
+	background: transparent;
+	border: 2px solid #80ccff;
+	outline: none;
+	margin-bottom: 9px;
+	color: #fff;
+	font-family: 'Quicksand', sans-serif;
+}
+input[type="password"] {
+	background: url("../images/password.png") no-repeat 382px 11px;
+	width: 80%;
+	padding: 5px 4px 5px;
+	font-size: 14px;
+	background: transparent;
+	border: 2px solid #80ccff;
+	outline: none;
+	margin-bottom: 9px;
+	color: #fff;
+	font-family: 'Quicksand', sans-serif;
+}
+
+/*ul.agileinfotich {
+	list-style: none;
+	display: inline-block;
+	width: 100%;
+	margin-bottom: 10px;
+	text-align: left;
+	padding-left: 10px;
+}
+*/
+/*ul.agileinfotich li input[type="checkbox"] {
+	display: none;
+}*/
+
+/*ul.agileinfotich li input[type="checkbox"]+label {
+	position: relative;
+	padding-left: 50px;
+	border: #F0F8FF;
+	display: inline-block;
+	font-size: 15px;
+    color: #fff;
+}
+
+ul.agileinfotich li input[type="checkbox"]+label span:first-child {
+	width: 15px;
+	height: 15px;
+	display: inline-block;
+	border: 2px solid #80ccff;
+	position: absolute;
+	top: -1px;
+	left: 20px;
+	bottom: 4px;
+}
+
+ul.agileinfotich li input[type="checkbox"]:checked+label span:first-child:before {
+	content: "";
+	background: url(../images/tick.png)no-repeat;
+	position: absolute;
+	left: 3px;
+	top: 3px;
+	font-size: 10px;
+	width: 10px;
+	height: 10px;
+}
+
+input[type="submit"] {
+	font-size: 25px;
+	padding: 10px 65px;
+	background-color: #80ccff;
+	color: #000;
+	border: none;
+	border-radius: 0px;
+	outline: none;
+	float:none;
+	cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #008ae6;
+    color: #000000;
+}*/
+
+@media screen and (max-width: 1366px) {
+	.container {
+		width: 35%;
+	}
+	.w3footeragile {
+		margin: 100px 10px 20px;
+	}
+}

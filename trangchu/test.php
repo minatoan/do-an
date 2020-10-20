@@ -1,0 +1,1 @@
+<?php $age = array("Peter"=>"35", "Ben"=>"37", "Joe"=>"43"); var_dump($age); foreach($age as $x=>$giatri ) {     echo "Key=".$x."-".$giatri ;     echo "<br>"; } ?>

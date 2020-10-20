@@ -1,0 +1,13 @@
+.content{
+	width: 1000px; 
+	height: 100px; 
+	background-color: red; 
+	margin: auto;
+}
+.banner{
+	width: 1000px; 
+	height: 100px; 
+	/*background-image: url("../images/banner.jpg");*/
+	margin: auto;
+
+}

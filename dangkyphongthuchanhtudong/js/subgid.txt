@@ -1,0 +1,43 @@
+﻿/*subgrid */
+$(function(){
+    $('#qlxk-dg').datagrid({
+        view: detailview,
+        detailFormatter:function(index,row){
+            return '<div style="padding:2px"><table pagination="true"  class="ddv' + index + '"></table></div>';
+             
+        },
+        onExpandRow: function(index,row){
+            var ddv = $(this).datagrid('getRowDetail',index).find('table.ddv'+index);
+            var phu = row.id;
+            ddv.datagrid({
+                url: '../sanphams/taiDuLieuphieuxuat?maphieuxuat='+phu,
+                fitColumns:true,
+                singleSelect:true,
+                rownumbers:true,
+                loadMsg:'Äang táº£i...',
+                emptyMsg:'KhĂ´ng cĂ³ dá»¯ liá»‡u.',
+                height:'auto',
+                columns:[[
+                {field:'tensp',title:'TĂªn sáº£n pháº©m',width:'360px'},
+                {field:'soLxuat',title:'Sá»‘ lÆ°á»£ng',width:100,align:'center'},
+                {field:'giaxuatspnv',title:'ÄÆ¡n giĂ¡(VNÄ)',width:100,align:'right',formatter:formatCurrency},
+                {field:'chietkhau',title:'Chiáº¿t kháº¥u(%)',width:100,align:'center'},
+                {field:'thanhtien',title:'ThĂ nh tiá»n(VNÄ)',width:120,align:'right',formatter:formatCurrency},
+                {field:'soloxuat',title:'Sá»‘ lĂ´',width:100,align:'center'},
+                {field:'soqr',title:'sá»‘ QR',width:100,align:'center'},
+                {field:'vitridatsanpham',title:'Vá»‹ trĂ­ SP',width:180,align:'right'},
+                ]],
+                onResize:function(){
+                    $('#qlxk-dg').datagrid('fixDetailRowHeight',index);
+                },
+                onLoadSuccess:function(){
+                    setTimeout(function(){
+                        $('#qlxk-dg').datagrid('fixDetailRowHeight',index);
+                    },0);
+                }
+            });
+            $('#qlxk-dg').datagrid('fixDetailRowHeight',index);
+            index2=index;
+        }
+    });
+});
